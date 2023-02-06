@@ -1,0 +1,20 @@
+body
+{
+    background-color: rgb(151, 162, 164);
+}
+.clr
+{
+    clear: both;
+}
+.quiz,.score
+{
+    display: none;
+}
+#correct
+{
+    display: none;
+}
+#incorrect
+{
+    display: none;
+}
