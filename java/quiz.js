@@ -41,9 +41,9 @@ export class Quiz{
 
         let answers =[this.questions[this.currQuestion].correct_answer,...this.questions[this.currQuestion].incorrect_answers];
 
-        console.log(answers);
+        // console.log(answers);
         this.shuffle(answers)
-        console.log(answers);
+        // console.log(answers);
 
         document.getElementById("numQues").innerHTML=`${this.currQuestion +1} Of ${this.numOfQuestions} Questions`
         let answerRow=''
@@ -56,7 +56,7 @@ export class Quiz{
         
         }
 
-        document.getElementById("question").innerHTML= this.questions[0].question;
+        document.getElementById("question").innerHTML= this.questions[this.currQuestion].question;
         document.getElementById("rowAnswer").innerHTML=answerRow;
     }
 
